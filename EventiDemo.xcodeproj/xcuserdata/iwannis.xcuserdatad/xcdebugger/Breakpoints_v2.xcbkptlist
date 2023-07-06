@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7178E803-503F-48C7-9AD7-7B11B5673FA2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0FA70BA-4659-4FFA-B5E4-DFE365C9E313"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventiDemo/Screens/RootScreen/RootView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "register()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0FA70BA-4659-4FFA-B5E4-DFE365C9E313 - fae7a7701496bde1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EventiDemo.FirstView.body.getter : some"
+                  moduleName = "EventiDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iwannis/Desktop/EventiDemoApp/EventiDemo/EventiDemo/Screens/RootScreen/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "729">
+               </Location>
+               <Location
+                  uuid = "C0FA70BA-4659-4FFA-B5E4-DFE365C9E313 - a9ea696884c6c59a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EventiDemo.FirstView.register() -&gt; ()"
+                  moduleName = "EventiDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iwannis/Desktop/EventiDemoApp/EventiDemo/EventiDemo/Screens/RootScreen/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
