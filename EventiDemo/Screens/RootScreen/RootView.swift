@@ -10,6 +10,7 @@ import SwiftUI
 struct RootView: View {
     
     @StateObject var viewModel: RootViewModel = .init()
+    @StateObject var userSessionUtility = UserSessionUtility.shared
         
     var body: some View {
         self.getRootView()
@@ -18,11 +19,11 @@ struct RootView: View {
     @ViewBuilder
     private func getRootView() -> some View {
         
-        switch self.viewModel.loggedIn {
-        case true:
+        switch self.userSessionUtility.state {
+        case .loggedIn:
             DashboardScreenView.init()
-        case false:
-            FirstView.init(loggedIn: self.$viewModel.loggedIn)
+        case .loggedOut:
+            LoginView.init()
         }
     }
 }
@@ -62,9 +63,3 @@ struct FirstView: View {
         }
     }
 }
-
-//struct RootView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RootView()
-//    }
-//}

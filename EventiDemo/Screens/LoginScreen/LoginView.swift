@@ -9,12 +9,11 @@ import SwiftUI
 
 struct LoginView: View {
 
-    @State var email: String = ""
-    @State var emailAddress: String = ""
+    @StateObject var viewModel: LoginViewModel = .init(model: LoginModel())
     
     var body: some View {
+        
         VStack {
-            
             Text("Hey! Welcome Back")
                 .font(.title)
                 .fontWeight(.bold)
@@ -28,8 +27,7 @@ struct LoginView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 25, height: 25)
-                        // play with the frame and padding here
-                        TextField("Email Address", text: $email)
+                        TextField("Email Address", text: self.$viewModel.emailAddress)
                     }
                     .modifier(TextfieldViewModifier())
                     
@@ -38,12 +36,19 @@ struct LoginView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 25, height: 25)
-                        SecureField("Password", text:  $emailAddress)
+                        SecureField("Password", text: self.$viewModel.password)
                     }
                     .modifier(TextfieldViewModifier())
                 }
                 .padding(.horizontal, 40)
             }
+            
+            Button {
+                self.viewModel.handleLoginButtonTapped()
+            } label: {
+                Text("Login")
+            }
+
         }
     }
 }
@@ -56,9 +61,6 @@ struct TextfieldViewModifier: ViewModifier {
             .padding(15)
             .background(Color.init(red: 245/255, green: 246/255, blue: 249/255))
             .cornerRadius(20)
-            
-//            .foregroundColor(.red)
-//            .font(.system(size: 24, weight: .bold, design: .default))
     }
 }
 

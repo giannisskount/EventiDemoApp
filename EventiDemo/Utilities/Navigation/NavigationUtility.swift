@@ -11,11 +11,7 @@ class NavigationUtility: ObservableObject {
     
     static let shared = NavigationUtility()
     
-    @Published var navigationPath: [NavigationObject] {
-        didSet {
-            print(NavigationUtility.shared.navigationPath)
-        }
-    }
+    @Published var navigationPath: [NavigationObject]
     
     init(navigationPath: [NavigationObject] = []) {
         self.navigationPath = navigationPath

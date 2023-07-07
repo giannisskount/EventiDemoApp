@@ -20,10 +20,12 @@
 		083EF5142A34F2F0009BEF5F /* NavigationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EF5122A34F2F0009BEF5F /* NavigationUtility.swift */; };
 		083EF5152A34F2F0009BEF5F /* NavigationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083EF5132A34F2F0009BEF5F /* NavigationObject.swift */; };
 		088151492A3654DF00293966 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088151482A3654DF00293966 /* LoginView.swift */; };
-		08C18E522A56EC6500D60176 /* DeleteMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C18E512A56EC6500D60176 /* DeleteMe.swift */; };
 		08FABC8E2A55CDBD00464614 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08FABC8D2A55CDBD00464614 /* GoogleService-Info.plist */; };
 		08FABC912A55CE6600464614 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08FABC902A55CE6600464614 /* FirebaseAnalytics */; };
 		08FABC932A55CE6600464614 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08FABC922A55CE6600464614 /* FirebaseAuth */; };
+		E7DEE5272A57E56B0001BCB8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEE5262A57E56B0001BCB8 /* LoginViewModel.swift */; };
+		E7DEE5292A57E5880001BCB8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEE5282A57E5880001BCB8 /* LoginModel.swift */; };
+		E7DEE52C2A57E8940001BCB8 /* UserSessionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DEE52B2A57E8940001BCB8 /* UserSessionUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,10 @@
 		083EF5122A34F2F0009BEF5F /* NavigationUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationUtility.swift; sourceTree = "<group>"; };
 		083EF5132A34F2F0009BEF5F /* NavigationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationObject.swift; sourceTree = "<group>"; };
 		088151482A3654DF00293966 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		08C18E512A56EC6500D60176 /* DeleteMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMe.swift; sourceTree = "<group>"; };
 		08FABC8D2A55CDBD00464614 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7DEE5262A57E56B0001BCB8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E7DEE5282A57E5880001BCB8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E7DEE52B2A57E8940001BCB8 /* UserSessionUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		083EF5102A34F2CD009BEF5F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E7DEE52A2A57E87D0001BCB8 /* UserSession */,
 				083EF5112A34F2D7009BEF5F /* Navigation */,
 			);
 			path = Utilities;
@@ -208,9 +213,18 @@
 			isa = PBXGroup;
 			children = (
 				088151482A3654DF00293966 /* LoginView.swift */,
-				08C18E512A56EC6500D60176 /* DeleteMe.swift */,
+				E7DEE5262A57E56B0001BCB8 /* LoginViewModel.swift */,
+				E7DEE5282A57E5880001BCB8 /* LoginModel.swift */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		E7DEE52A2A57E87D0001BCB8 /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				E7DEE52B2A57E8940001BCB8 /* UserSessionUtility.swift */,
+			);
+			path = UserSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,15 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08C18E522A56EC6500D60176 /* DeleteMe.swift in Sources */,
+				E7DEE52C2A57E8940001BCB8 /* UserSessionUtility.swift in Sources */,
 				083EF5152A34F2F0009BEF5F /* NavigationObject.swift in Sources */,
 				083EF50F2A34F2BE009BEF5F /* DashboardEventCardView.swift in Sources */,
 				083EF5142A34F2F0009BEF5F /* NavigationUtility.swift in Sources */,
 				083EF5092A34F26C009BEF5F /* RootView.swift in Sources */,
 				083EF5082A34F26C009BEF5F /* RootViewModel.swift in Sources */,
+				E7DEE5292A57E5880001BCB8 /* LoginModel.swift in Sources */,
 				083EF4DA2A34F206009BEF5F /* EventiDemoApp.swift in Sources */,
 				088151492A3654DF00293966 /* LoginView.swift in Sources */,
 				083EF50C2A34F2AA009BEF5F /* DashboardScreenView.swift in Sources */,
+				E7DEE5272A57E56B0001BCB8 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
